@@ -8,7 +8,7 @@ pub fn disassemble(buf: &[u8], pc: usize) -> usize {
             op_offset = 3; 
             print_instruction("LXI B,", &buf[pc..pc+op_offset])
         },
-        0x02 => { print_instruction("STAX B", &buf[pc.pc+op_offset]) },
+        0x02 => { print_instruction("STAX B", &buf[pc.,pc+op_offset]) },
         0x03 => { print_instruction("INX B", &buf[pc..pc+op_offset])},
         0x04 => { print_instruction("INR B", &buf[pc..pc+op_offset])},
         0x05 => { print_instruction("INX B", &buf[pc..pc+op_offset])},
